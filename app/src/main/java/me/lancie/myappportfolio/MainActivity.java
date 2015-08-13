@@ -68,7 +68,7 @@ public class MainActivity extends Activity {
                 displayToast(getString(R.string.app5));
                 break;
             case R.id.button6:
-                displayToast("CAPSTONE: MY OWN APP");
+                displayToast(getString(R.string.app6));
                 break;
             default:
                 displayToast("This shouldn't be happening");
@@ -77,7 +77,7 @@ public class MainActivity extends Activity {
     }
 
     public void displayToast(CharSequence text) {
-        text = "This button will launch my " + text + " app!";
+        text = "This button will launch " + text;
         Toast.makeText(getApplicationContext(), text, Toast.LENGTH_SHORT).show();
     }
 }
