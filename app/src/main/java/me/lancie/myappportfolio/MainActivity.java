@@ -23,6 +23,8 @@ public class MainActivity extends Activity {
         Button button5 = (Button) findViewById(R.id.button5);
         Button button6 = (Button) findViewById(R.id.button6);
 
+
+
     }
 
     @Override
@@ -70,12 +72,12 @@ public class MainActivity extends Activity {
                 break;
             default:
                 displayToast("This shouldn't be happening");
+                break;
         }
     }
 
     public void displayToast(CharSequence text) {
         text = "This button will launch my " + text + " app!";
-        Toast toast = Toast.makeText(MainActivity.this, text, Toast.LENGTH_SHORT);
-        toast.show();
+        Toast.makeText(getApplicationContext(), text, Toast.LENGTH_SHORT).show();
     }
 }

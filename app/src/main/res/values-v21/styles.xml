@@ -13,11 +13,4 @@
         <item name="android:gravity">center_horizontal</item>
     </style>
 
-    <style name="ButtonText" parent="Title">
-        <item name="android:textSize">20dp</item>
-    </style>
-
-    <style name="Button2Text" parent="ButtonText">
-        <item name="android:textColor">#FAFAFA</item>
-    </style>
 </resources>
